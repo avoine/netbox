@@ -388,7 +388,8 @@ class Graph(models.Model):
         max_length=500,
         verbose_name='Source URL'
     )
-    link = models.URLField(
+    link = models.CharField(
+        max_length=500,
         blank=True,
         verbose_name='Link URL'
     )
